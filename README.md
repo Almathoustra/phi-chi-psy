@@ -39,7 +39,21 @@ FTP_HOST=HOST_FTP_OU_SE_TROUVE_LE_SITE
 FTP_PSW=MOT_DE_PASSE_FTP
 FTP_PORT=PORT (21)
 FTP_USER=NOM_UTILISATEUR
+SITE_EMAIL=
+SITE_EMAIL_HASH=
+SITE_EMAIL_CYHPER=
 ```
+
+### Protection de l'adresse email
+
+1. Dans le fichier `.env` remplacer la ligne `SITE_EMAIL=` par `SITE_EMAIL={ton@email}`
+1. Dans le fichier `.env` remplacer la ligne `SITE_EMAIL_CYHPER=` par `SITE_EMAIL_CYHPER=1234` (1234 est utilisé à titre d'exemple. Une clé plus complexe (charactères alléatoires) est vivement recommandée)
+1. Via l'invite de commande (ctrl + j dans vscode), lancer la commande suivante
+    ```bash
+    node ./scripts/hash-email.mjs
+    ```
+1. Copier le résultat
+1. Remplacer la ligne `SITE_EMAIL_HASH=` dans le ficher `.env` par `SITE_EMAIL_HASH={resultat}`
 
 ### Build
 
