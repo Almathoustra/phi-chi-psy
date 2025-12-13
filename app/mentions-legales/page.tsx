@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import CitationLayout from "../components/citations/CitationLayout";
 import styles from "./page.module.css";
+import { Mailto } from "../components/mailto/Mailto";
 
 export const metadata: Metadata = {
     title: "Mentions légales | φχψ"
@@ -21,7 +22,7 @@ export default function MentionsLegales(){
                 </div>
                 <div>
                     <dt>Courrier électronique:</dt>
-                    <dd><a href="mailto:philippe.anciaux@phichipsy.be">philippe.anciaux@phichipsy.be</a></dd>
+                    <dd><Mailto/></dd>
                 </div>
                 <div>
                     <dt>Téléphone:</dt>

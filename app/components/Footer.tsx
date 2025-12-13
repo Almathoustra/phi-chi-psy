@@ -2,6 +2,7 @@ import { cn } from '@/libs/utils';
 import Brain from './Brain';
 import styles from './Footer.module.css';
 import Link from 'next/link';
+import { Mailto } from './mailto/Mailto';
 
 export default function Footer(){
     return <footer className={styles.Footer} id="footer" tabIndex={-1}>
@@ -15,7 +16,7 @@ export default function Footer(){
                     7 Avenue de Champalle<br/>
                     5530 Yvoir
                 </address>
-                <p><a href="mailto:philippe.anciaux@phichipsy.be">philippe.anciaux@phichipsy.be</a></p>
+                <p><Mailto /></p>
                 <p><a href="tel:+32 471 06 31 42">+32 471 06 31 42</a></p>
             </div>
         </div>
