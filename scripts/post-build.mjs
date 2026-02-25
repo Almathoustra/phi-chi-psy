@@ -1,9 +1,9 @@
 import { Client } from "basic-ftp"
 import 'dotenv/config';
 
-uplaodDist()
+uploadDist();
 
-async function uplaodDist() {
+async function uploadDist() {
     const client = new Client()
     client.ftp.verbose = true
     try {

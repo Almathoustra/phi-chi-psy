@@ -27,11 +27,11 @@ export default function MobileMenu(){
     },[open]);
 
     return <>
-        <button type="button" className={cn('sm:hidden',styles.MenuButton, open ? styles.open : null)} onClick={toggle} disabled={open} aria-label="Menu">
+        <button type="button" className={cn('flex','sm:hidden',styles.MenuButton, open ? styles.open : null)} onClick={toggle} disabled={open} aria-label="Menu">
             <MenuIcon className={styles.Icon}/>
         </button>
         
-        <nav className={cn(styles.MenuPane, open ? styles.open : null)}>
+        <nav className={cn(styles.MenuPane, open ? styles.open : null, 'sm:hidden')}>
             <button type="button" className={styles.MenuCloseButton} onClick={toggle} aria-label="Fermer le menu">
                 <CloseIcon className={styles.Icon}/>
             </button>

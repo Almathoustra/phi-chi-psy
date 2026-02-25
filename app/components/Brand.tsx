@@ -16,7 +16,7 @@ export default function Brand(props:BrandProps){
         <span className={styles.Owner}>Philippe Anciaux - Psychologue</span>
         {
             props.withAgreementNumber
-                ? <span className={styles.Number}>120796463</span>
+                ? <span className={styles.Number}>791206463</span>
                 : null
         }
     </Link>

@@ -1,0 +1,17 @@
+.SkipLinkLayout{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 2;
+    padding: .5rem;
+    font-size: var(--font-s);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: var(--background);
+    transform: translateY(calc(-100% - 24px));
+    transition: transform ease-in .2s;
+}
+
+.SkipLinkLayout:focus-within{
+    transform: translateY(calc(0%));
+}

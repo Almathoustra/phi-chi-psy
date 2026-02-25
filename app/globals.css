@@ -31,6 +31,7 @@
 
 html,body{
   min-height:100vh;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -55,6 +56,11 @@ a:focus,
 a:active,
 a:hover{
     color:var(--secondary-2);
+}
+
+.font-xs{
+  font-size: var(--font-xs);
+  line-height: 1.1;
 }
 
 .font-lg, h6{ 

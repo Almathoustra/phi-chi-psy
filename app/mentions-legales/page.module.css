@@ -1,0 +1,13 @@
+.Dl{
+    display:flex;
+    flex-direction: column;
+    gap:.75rem;
+}
+
+.Dl dt{
+    font-weight: 700;
+}
+
+.Dl address{
+    font-style: normal;
+}

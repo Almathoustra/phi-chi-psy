@@ -11,7 +11,7 @@
     border-radius: .25rem;
 
     &::before{
-        content: open-quote;
+        content: '“';
         color: var(--primary-1);
         font-family: var(--font-1);
         position: absolute;

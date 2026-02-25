@@ -4,9 +4,9 @@ import styles from "./DesktopMenu.module.css";
 
 export default function DesktopMenu(){
     return <div className={cn(styles.DesktopMenuWrapper,'hidden', 'sm:block')}>
-        <div className={cn(styles.DesktopMenu, 'container')}>
+        <nav className={cn(styles.DesktopMenu, 'container')}>
             <Menu />
-        </div>
+        </nav>
     </div>
 }
     
